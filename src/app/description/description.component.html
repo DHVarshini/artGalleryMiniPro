@@ -1,0 +1,19 @@
+<div class="container col-lg-6 mt-3 h-100 w-100">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-md-4">
+      <img src="https://www.artic.edu/iiif/2/{{artwork.image_id}}/full/843,/0/default.jpg" alt="Artwork Image"
+        class="img-fluid shadow-lg p-3 mb-5 bg-white rounded">
+    </div>
+    <div class="col-md-4">
+      <h3>Title: {{artwork.title}}</h3>
+      <p>Artistic genre: {{artwork.medium_display}}</p>
+      <p>Artist: {{artwork.artist_titles}}</p>
+      <p>Acknowledgment credits: {{artwork.credit_line}}</p>
+      <p>Place of Origin: {{artwork.place_of_origin}}</p>
+      <p>Date: {{artwork.date_display}}</p>
+    </div>
+    <div>
+      <p><i class="fa fa-hand-o-right"></i> Description: {{artwork.description}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="row d-flex flex-wrap m-5">
+  <div class="card col-sm-6 col-md-4 col-lg-3 shadow-sm mb-3" *ngFor="let art of wishlist">
+    <div class="card h-10">
+      <img class="card-img-top img-fluid h-20" style="object-fit: cover; object-position: center; height: 300px;"
+        src="https://www.artic.edu/iiif/2/{{art.image_id}}/full/843,/0/default.jpg" alt="Art Image">
+    </div>
+
+    <div class="card-body">
+      <h4 class="card-text">{{art.title}}</h4>
+    </div>
+    <div class="d-flex justify-content-around align-items-center mb-5">
+      <button type="button" class="btn btn-sm btn-outline-secondary" routerLink="description/{{art.id}}">Know
+        More</button>
+      <button class="btn btn-sm btn-outline-secondary" (click)="removeFromWishlist(art)">Remove</button>
+    </div>
+  </div>
+</div>
